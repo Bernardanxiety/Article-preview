@@ -7,7 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Article preview component</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -19,7 +22,7 @@
   
     <div class="card">
       <div class="img">
-        <img src="images/drawers.jpg" alt="">
+        <img class="drawers" src="images/drawers.jpg" alt="">
       </div>
       <div class="info">
         
@@ -27,19 +30,26 @@
           Shift the overall look and feel by adding these wonderful
           touches to furniture in your home
         </p>
-        <p>
+        <p class="desc">
           Ever been in a room and felt like something was missing? Perhaps
           it felt slightly bare and uninviting. I’ve got some simple tips
           to help you make any room feel complete.
         </p>
-        <div class="fuser">
-          <img src="images/avatar-michelle.jpg" alt="">
+        <div class="user">
+          <img class="avatar" src="images/avatar-michelle.jpg" alt="">
           <p class="name">
             Michelle Appleton
             <br><span>28 Jun 2020</span>
-            <img src="images/icon-share.svg" alt="">
           </p>
+          <img class="share btn" src="images/icon-share.svg" alt="">
         </div>
+      </div>
+      <div class="socials disabled">
+        <p>share</p>
+        <img src="images/icon-facebook.svg" alt="">
+        <img src="images/icon-twitter.svg" alt="">
+        <img src="images/icon-pinterest.svg" alt="">
+        <img class="btn" src="images/icon-share.svg" alt="">
       </div>
     </div>
   
@@ -49,5 +59,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -13,15 +13,151 @@ html {
     box-sizing: border-box;
 }
 
+h2, p {
+    margin: 0;
+}
+
+.flow > * + * {
+    margin-top: var(--top, 1em);
+}
+
 body {
     margin: 0;
     font-size: 1.3rem;
     font-family: Manrope;
     color: var(--clr2);
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 img {
     height: 100%;
     max-width: 100%;
+    display: block;
 }
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--clr1);
+}
+
+section {
+    padding: 7.4rem 0 0;
+    height: 100vh;
+    background-color: var(--clr4);
+}
+
+.card {
+    width: min(87%, 73rem);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.drawers {
+
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.description {
+    background-color: #fff;
+    padding: 3.6rem 3.2rem 2rem;
+}
+
+.description h2 + p {
+    --top: 1.2rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+p + .user {
+    --top: 5.1rem;
+}
+
+.avatar {
+    width: 4rem;
+    border-radius: 100vh;
+    margin-right: 1.6rem;
+}
+
+.name {
+    color: var(--clr1);
+    font-weight: 700;
+}
+
+.name span {
+    color: var(--clr3);
+    font-weight: 500;
+}
+
+.open-icon {
+    margin-left: auto;
+    background-color: var(--clr4);
+    padding: .85rem;
+    border-radius: 100vh;
+    cursor: pointer;
+}
+
+.close-icon {
+    margin-left: auto;
+    background-color: var(--clr3);
+    padding: .85rem;
+    border-radius: 100vh;
+    cursor: pointer;
+}
+
+.open-icon:focus, .open-icon:hover,
+.close-icon:focus, .close-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.socials {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--clr1);
+    display: flex;
+    position: absolute;
+    left: -3.2rem;
+    right: -3.2rem;
+    bottom: -2rem;
+    top: -.4rem;
+    align-items: center;
+    padding: 0 3.2rem;
+}
+
+.socials p {
+    color: var(--clr3);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: .5rem;
+    margin-right: 1.6rem;
+}
+
+.socials ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.socials ul > * + * {
+    margin-left: 1.6rem;
+}
+
+.enabled {
+    /* height: 100%;
+    width: 100%;
+    overflow:visible; */
+}
+
+

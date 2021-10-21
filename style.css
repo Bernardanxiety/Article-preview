@@ -213,6 +213,26 @@ p + .user {
         top: 8.5rem;
         left: 10.6rem;
     }
+
+    .close-icon::after {
+
+        content: "";
+    
+        position: absolute;
+    
+        top: -3rem;
+    
+        left: 1.1rem;
+    
+        margin-left: -5px;
+    
+        border-width: 10px;
+    
+        border-style: solid;
+    
+        border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+    
+    }
 }
 
 
